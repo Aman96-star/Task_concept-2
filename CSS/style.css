@@ -54,14 +54,21 @@ list-style: none;
 
 .main .navbar .menu{
     padding-left: 30px;
-    
+
+}
+.main .navbar .menu i{
+  display: none;
 }
 
+.main .navbar .menu i{
+    /* display: "none"; */
+    
+}
 
 @media only screen and (max-width: 768px)  {
     .main .navbar{
         justify-content: space-between;
-       padding-top: 5vh;
+       padding-top: 10vh;
     }
     .main .navbar ul {
          height: 100%;
@@ -71,14 +78,27 @@ list-style: none;
         display: none;
         
 }
-
+.main .navbar .menu i{
+    display: inherit;
+  }
 .menu{
     height: 100%;
     width: 10%; 
-    /* background: #000; */
     align-self: center;
   
 }
+
+
+.main .navbar .menu #toggleMenu{
+    display: block;
+    
+}
+
+.main .navbar .menu #toggleClose{
+    display: none;
+     
+}
+
 
 }
 
