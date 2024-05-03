@@ -1,8 +1,19 @@
   
  const menu = document.querySelector(".main .navbar .menu")
  const ul  = document.querySelector("ul")
-//  const cmenu = document.querySelector(".main .navbar .menu-close .ri-logout-box-r-line")
-const cmenu = document.getElementById("toggleClose")
+
+
+const list =document.querySelector('.bar')
+
+const main=document.querySelector('.main')
+
+// list.addEventListener('click',function(){
+//      list.style.height="100px"
+//      list.style.width="120px"
+//      list.style.backgroundColor="red"
+//      list.style.display="flex"
+//      list.style.flexDirection="row"
+// })
  menu.addEventListener('click',function(){
      menu.style.color = "green"
      ul.style.display  = "flex"
@@ -16,26 +27,21 @@ const cmenu = document.getElementById("toggleClose")
      ul.style.paddingLeft ="60px"
      ul.style.marginTop ="63px"
      menu.style.display ="none"
-     console.log(cmenu)
-     cmenu.style.display = "inherit"
-     cmenu.style.position = "absolute"
-     cmenu.style.top = "5%"     
-     cmenu.style.left = "5%"     
+     
+         
 
     }) 
 
-    cmenu.addEventListener('click',function(){
-        
-    })
-
-
+    // console.log(main);
+    // console.log(main.children);
     
-    // function clgMY(){
-    //     document.getElementById("toggleMenu").style.display="none";
-    //     document.getElementById("toggleClose").style.display="block";
-
-
-
-
-    //     console.log("dv")
-    // }
+    for(let i=0;i<main.children.length;i++)
+    {
+        console.log(main.children[i].innerHTML);
+    }
+     
+    console.log(main.firstElementChild);
+    console.log(main.lastElementChild);
+    console.log(main.parentElement);
+   
+       
